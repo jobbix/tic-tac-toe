@@ -2,3 +2,13 @@ language: java
 install: ant deps
 script: ant jar
 
+# whitelist
+branches:
+  only:
+    - master
+
+# blacklist
+branches:
+  except:
+    - work
+ 
